@@ -30,6 +30,96 @@ const instagramAccounts: InstagramAccount[] = [
     description: 'Official Vivo smartphones showcase, mobile tech innovations & retail experience across Rajasthan.'
   },
   {
+    id: 'kgvinfra',
+    name: 'Gold Bellagio By KGV Infra',
+    handle: '@kgvinfra',
+    category: 'Real Estate',
+    instagramUrl: 'https://www.instagram.com/kgvinfra?igsh=NW43dzlqbWd2MWpp',
+    avatarUrl: 'https://i.ibb.co/v4hkzmPw/13-1.jpg',
+    isVerified: true,
+    description: 'Luxury township & plot showcase campaigns driving qualified buyer inquiries.'
+  },
+  {
+    id: 'drishtieyecarehospital',
+    name: 'Drishti Eye Care Hospital',
+    handle: '@drishtieyecarehospital_',
+    category: 'Healthcare',
+    instagramUrl: 'https://www.instagram.com/drishtieyecarehospital_?igsh=NnZycHpldHMyYmZp',
+    avatarUrl: 'https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=400&q=80',
+    isVerified: true,
+    description: 'Advanced ophthalmic treatments & comprehensive eye health awareness.'
+  },
+  {
+    id: 'shubhambrosia',
+    name: 'Shubh Ambrosia',
+    handle: '@shubhambrosia',
+    category: 'Real Estate',
+    instagramUrl: 'https://www.instagram.com/shubhambrosia?igsh=cm43OWxuYno2N2h6',
+    avatarUrl: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=400&q=80',
+    isVerified: true,
+    description: 'Premium luxury homes & gated residential community.'
+  },
+  {
+    id: 'shubharise',
+    name: 'Shubh Arise',
+    handle: '@shubh_arise',
+    category: 'Real Estate',
+    instagramUrl: 'https://www.instagram.com/shubh_arise?igsh=dXAzMW5tMGhwd2Fn',
+    avatarUrl: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=400&q=80',
+    isVerified: true,
+    description: 'Modern residential living spaces & luxury apartments.'
+  },
+  {
+    id: 'tharmotorsport',
+    name: 'Thar Motorsport',
+    handle: '@tharmotorsport',
+    category: 'Hospitality & Lifestyle',
+    instagramUrl: 'https://www.instagram.com/tharmotorsport?igsh=MWVqeDUzejNmNXRieQ==',
+    avatarUrl: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=400&q=80',
+    isVerified: true,
+    description: 'Premier off-road motorsport rallies, desert drives & extreme automotive adventure events.'
+  },
+  {
+    id: 'aventara-jewels',
+    name: 'Aventara Jewels',
+    handle: '@aventara_jewels',
+    category: 'Retail & Fashion',
+    instagramUrl: 'https://www.instagram.com/aventara_jewels?igsh=MWJoYzgzNzkyZzEwOQ==',
+    avatarUrl: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=400&q=80',
+    isVerified: true,
+    description: 'Fine luxury jewelry & bespoke bridal ornament collections.'
+  },
+  {
+    id: 'plywoodwale',
+    name: 'Plywoodwale',
+    handle: '@plywoodwale_com',
+    category: 'Retail & Fashion',
+    instagramUrl: 'https://www.instagram.com/plywoodwale_com?igsh=NXkxa21vZG1hcms3',
+    avatarUrl: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=400&q=80',
+    isVerified: false,
+    description: 'Quality interior plywood, laminates & architectural hardware.'
+  },
+  {
+    id: 'morganskota',
+    name: 'Morgans Kota',
+    handle: '@morganskota',
+    category: 'Hospitality & Lifestyle',
+    instagramUrl: 'https://www.instagram.com/morganskota?igsh=MW1pdnc4aXh2cXlkOA==',
+    avatarUrl: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=400&q=80',
+    isVerified: true,
+    description: 'Fine dining lounge, cafe experience & luxury culinary events.'
+  },
+  {
+    id: 'teddybeardubai',
+    name: 'Teddy Bear Dubai',
+    handle: '@teddybear.dubai',
+    category: 'Retail & Fashion',
+    instagramUrl: 'https://www.instagram.com/teddybear.dubai?igsh=MTk5NTc4cGhsZjF4cw==',
+    avatarUrl: 'https://images.unsplash.com/photo-1559454403-b8fb88521f11?auto=format&fit=crop&w=400&q=80',
+    isVerified: true,
+    description: 'High-end plush toys & luxury gift delivery service in Dubai.'
+  },
+  {
     id: 'tigerdenresort_ranthambor',
     name: 'Tiger Den Resort',
     handle: '@tigerdenresort_ranthambor',
@@ -70,16 +160,6 @@ const instagramAccounts: InstagramAccount[] = [
     description: 'Specialized audiometry, digital hearing aids & comprehensive hearing healthcare clinic.'
   },
   {
-    id: 'tharmotorsport',
-    name: 'Thar Motorsport',
-    handle: '@tharmotorsport',
-    category: 'Hospitality & Lifestyle',
-    instagramUrl: 'https://www.instagram.com/tharmotorsport?igsh=MWVqeDUzejNmNXRieQ==',
-    avatarUrl: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=400&q=80',
-    isVerified: true,
-    description: 'Premier off-road motorsport rallies, desert drives & extreme automotive adventure events.'
-  },
-  {
     id: 'krishnambysumitgoel',
     name: 'Krishnam by Sumit Goel',
     handle: '@krishnambysumitgoel',
@@ -88,16 +168,6 @@ const instagramAccounts: InstagramAccount[] = [
     avatarUrl: 'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=400&q=80',
     isVerified: true,
     description: 'Bespoke designer ethnic wear, bridal couture sarees & luxury fashion studio.'
-  },
-  {
-    id: 'akshatelectronicsbaran',
-    name: 'Akshat Electronics Baran',
-    handle: '@akshat_electronics_baran',
-    category: 'Education & Tech',
-    instagramUrl: 'https://www.instagram.com/akshat_electronics_baran/',
-    avatarUrl: 'https://images.unsplash.com/photo-1550009158-9ebf69173e03?auto=format&fit=crop&w=400&q=80',
-    isVerified: true,
-    description: 'Consumer electronics, smart home appliances & digital tech retail store in Baran.'
   },
   {
     id: 'toofitofficial',
@@ -110,26 +180,6 @@ const instagramAccounts: InstagramAccount[] = [
     description: 'Premium fitness training, gym lifestyle, activewear & physical wellness.'
   },
   {
-    id: 'itesolar',
-    name: 'ITE Solar',
-    handle: '@ite_solar',
-    category: 'Education & Tech',
-    instagramUrl: 'https://www.instagram.com/ite_solar?igsh=MXQxc2poZG5kZ2s0bw==',
-    avatarUrl: 'https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=400&q=80',
-    isVerified: true,
-    description: 'Clean solar energy solutions, rooftop solar installations & renewable green technology.'
-  },
-  {
-    id: 'aventara-jewels',
-    name: 'Aventara Jewels',
-    handle: '@aventara_jewels',
-    category: 'Retail & Fashion',
-    instagramUrl: 'https://www.instagram.com/aventara_jewels?igsh=MWJoYzgzNzkyZzEwOQ==',
-    avatarUrl: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=400&q=80',
-    isVerified: true,
-    description: 'Fine luxury jewelry & bespoke bridal ornament collections.'
-  },
-  {
     id: 'just4utravels',
     name: 'Just 4 U Travels',
     handle: '@just4utravels',
@@ -138,26 +188,6 @@ const instagramAccounts: InstagramAccount[] = [
     avatarUrl: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=400&q=80',
     isVerified: true,
     description: 'Custom travel itineraries, luxury tours & vacation packages.'
-  },
-  {
-    id: 'kgvinfra',
-    name: 'Gold Bellagio By KGV Infra',
-    handle: '@kgvinfra',
-    category: 'Real Estate',
-    instagramUrl: 'https://www.instagram.com/kgvinfra?igsh=NW43dzlqbWd2MWpp',
-    avatarUrl: 'https://i.ibb.co/v4hkzmPw/13-1.jpg',
-    isVerified: true,
-    description: 'Luxury township & plot showcase campaigns driving qualified buyer inquiries.'
-  },
-  {
-    id: 'drishtieyecarehospital',
-    name: 'Drishti Eye Care Hospital',
-    handle: '@drishtieyecarehospital_',
-    category: 'Healthcare',
-    instagramUrl: 'https://www.instagram.com/drishtieyecarehospital_?igsh=NnZycHpldHMyYmZp',
-    avatarUrl: 'https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=400&q=80',
-    isVerified: true,
-    description: 'Advanced ophthalmic treatments & comprehensive eye health awareness.'
   },
   {
     id: 'draditmgarg',
@@ -190,26 +220,6 @@ const instagramAccounts: InstagramAccount[] = [
     description: 'Prime real estate developments & modern infrastructure.'
   },
   {
-    id: 'shubharise',
-    name: 'Shubh Arise',
-    handle: '@shubh_arise',
-    category: 'Real Estate',
-    instagramUrl: 'https://www.instagram.com/shubh_arise?igsh=dXAzMW5tMGhwd2Fn',
-    avatarUrl: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=400&q=80',
-    isVerified: true,
-    description: 'Modern residential living spaces & luxury apartments.'
-  },
-  {
-    id: 'plywoodwale',
-    name: 'Plywoodwale',
-    handle: '@plywoodwale_com',
-    category: 'Retail & Fashion',
-    instagramUrl: 'https://www.instagram.com/plywoodwale_com?igsh=NXkxa21vZG1hcms3',
-    avatarUrl: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=400&q=80',
-    isVerified: false,
-    description: 'Quality interior plywood, laminates & architectural hardware.'
-  },
-  {
     id: 'bharatlandmarkrealty',
     name: 'Bharat Landmark Realty',
     handle: '@bharatlandmarkrealty',
@@ -218,16 +228,6 @@ const instagramAccounts: InstagramAccount[] = [
     avatarUrl: 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&w=400&q=80',
     isVerified: true,
     description: 'Trusted real estate advisory & commercial property showcase.'
-  },
-  {
-    id: 'shubhambrosia',
-    name: 'Shubh Ambrosia',
-    handle: '@shubhambrosia',
-    category: 'Real Estate',
-    instagramUrl: 'https://www.instagram.com/shubhambrosia?igsh=cm43OWxuYno2N2h6',
-    avatarUrl: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=400&q=80',
-    isVerified: true,
-    description: 'Premium luxury homes & gated residential community.'
   },
   {
     id: 'lalreadymadekota',
@@ -258,26 +258,6 @@ const instagramAccounts: InstagramAccount[] = [
     avatarUrl: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=400&q=80',
     isVerified: true,
     description: 'Global trade, export-import & enterprise business solutions.'
-  },
-  {
-    id: 'morganskota',
-    name: 'Morgans Kota',
-    handle: '@morganskota',
-    category: 'Hospitality & Lifestyle',
-    instagramUrl: 'https://www.instagram.com/morganskota?igsh=MW1pdnc4aXh2cXlkOA==',
-    avatarUrl: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=400&q=80',
-    isVerified: true,
-    description: 'Fine dining lounge, cafe experience & luxury culinary events.'
-  },
-  {
-    id: 'teddybeardubai',
-    name: 'Teddy Bear Dubai',
-    handle: '@teddybear.dubai',
-    category: 'Retail & Fashion',
-    instagramUrl: 'https://www.instagram.com/teddybear.dubai?igsh=MTk5NTc4cGhsZjF4cw==',
-    avatarUrl: 'https://images.unsplash.com/photo-1559454403-b8fb88521f11?auto=format&fit=crop&w=400&q=80',
-    isVerified: true,
-    description: 'High-end plush toys & luxury gift delivery service in Dubai.'
   },
   {
     id: 'naghmakhanofficial',
