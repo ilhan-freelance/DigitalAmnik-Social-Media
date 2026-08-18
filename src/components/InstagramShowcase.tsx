@@ -361,7 +361,7 @@ export default function InstagramShowcase() {
         <div className="flex flex-col items-center gap-6 mb-12">
           
           {/* Category Tabs: Strictly ONE SINGLE HORIZONTAL LINE */}
-          <div className="flex flex-nowrap items-center justify-center gap-2 md:gap-3 overflow-x-auto no-scrollbar w-full py-1">
+          <div className="flex flex-nowrap items-center justify-start md:justify-center gap-2 md:gap-3 overflow-x-auto no-scrollbar w-full py-2 px-1">
             {categories.map((cat) => (
               <button
                 key={cat}
