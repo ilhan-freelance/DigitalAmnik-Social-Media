@@ -1,6 +1,36 @@
-import { motion, useScroll, useTransform } from 'motion/react';
+import { motion } from 'motion/react';
 import { ArrowRight, Globe, Zap, BarChart, Users, TrendingUp } from 'lucide-react';
-import { useRef } from 'react';
+import { Component, ReactNode } from 'react';
+import Orb from './Orb';
+
+interface ErrorBoundaryProps {
+  children: ReactNode;
+}
+interface ErrorBoundaryState {
+  hasError: boolean;
+}
+
+class OrbErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
+  constructor(props: ErrorBoundaryProps) {
+    super(props);
+    this.state = { hasError: false };
+  }
+
+  static getDerivedStateFromError() {
+    return { hasError: true };
+  }
+
+  componentDidCatch(error: unknown) {
+    console.warn("Orb WebGL error caught:", error);
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return null;
+    }
+    return this.props.children;
+  }
+}
 
 export default function Hero() {
   const containerVariants = {
@@ -85,13 +115,15 @@ export default function Hero() {
           >
             {/* React Bits Interactive WebGL Orb Effect Framing Text on PC & Mobile */}
             <div className="absolute inset-0 w-full h-full z-0 pointer-events-auto opacity-95 flex items-center justify-center">
-              <Orb
-                hoverIntensity={0.6}
-                rotateOnHover={true}
-                hue={0}
-                forceHoverState={false}
-                backgroundColor="#000000"
-              />
+              <OrbErrorBoundary>
+                <Orb
+                  hoverIntensity={0.6}
+                  rotateOnHover={true}
+                  hue={0}
+                  forceHoverState={false}
+                  backgroundColor="#000000"
+                />
+              </OrbErrorBoundary>
             </div>
 
             <svg 
