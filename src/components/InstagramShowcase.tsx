@@ -115,7 +115,7 @@ const instagramAccounts: InstagramAccount[] = [
     handle: '@ite_solar',
     category: 'Education & Tech',
     instagramUrl: 'https://www.instagram.com/ite_solar?igsh=MXQxc2poZG5kZ2s0bw==',
-    avatarUrl: 'https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=400&q=80',
+    avatarUrl: 'https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=400&q=80',
     isVerified: true,
     description: 'Clean solar energy solutions, rooftop solar installations & renewable green technology.'
   },
