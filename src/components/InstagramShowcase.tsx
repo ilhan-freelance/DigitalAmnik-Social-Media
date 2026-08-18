@@ -60,6 +60,16 @@ const instagramAccounts: InstagramAccount[] = [
     description: 'Advanced ophthalmic treatments & comprehensive eye health awareness.'
   },
   {
+    id: 'draditmgarg',
+    name: 'Dr. Aditm Garg',
+    handle: '@dr.aditmgarg',
+    category: 'Healthcare',
+    instagramUrl: 'https://www.instagram.com/dr.aditmgarg?igsh=d3RqemZhYXVnanFv&igsi=d3RqemZhYXVnanFv',
+    avatarUrl: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=400&q=80',
+    isVerified: true,
+    description: 'Specialist medical consultation, patient wellness & healthcare leadership.'
+  },
+  {
     id: 'kotaeye',
     name: 'Kota Eye Hospital',
     handle: '@kotaeye',
@@ -180,14 +190,24 @@ const instagramAccounts: InstagramAccount[] = [
     description: 'Digital brand creator, lifestyle campaigns & media presence.'
   },
   {
-    id: 'goodhealthcare',
-    name: 'Good Health Care',
-    handle: '@goodhealthcare__',
-    category: 'Healthcare',
-    instagramUrl: 'https://www.instagram.com/goodhealthcare__?igsh=eGl6a29vYjc1MnRx',
-    avatarUrl: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=400&q=80',
-    isVerified: false,
-    description: 'Comprehensive healthcare advice, diagnostics & wellness.'
+    id: 'shaazmediaentertainment',
+    name: 'Shaaz Media Entertainment',
+    handle: '@shaazmediaentertainment',
+    category: 'Hospitality & Lifestyle',
+    instagramUrl: 'https://www.instagram.com/shaazmediaentertainment?igsh=MWpqdWRpdjdpY250bA==',
+    avatarUrl: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=400&q=80',
+    isVerified: true,
+    description: 'Media production, entertainment events & talent management.'
+  },
+  {
+    id: 'siplshaazintpremierleague',
+    name: 'Shaaz International Premier League',
+    handle: '@sipl_shaazintpremierleague',
+    category: 'Hospitality & Lifestyle',
+    instagramUrl: 'https://www.instagram.com/sipl_shaazintpremierleague?igsh=OGdnbHQ3a3ptNDU5',
+    avatarUrl: 'https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=400&q=80',
+    isVerified: true,
+    description: 'Premier sports league, cricket tournaments & athletic events.'
   },
   {
     id: 'pasandladiessuits',
@@ -327,16 +347,16 @@ export default function InstagramShowcase() {
           </motion.p>
         </div>
 
-        {/* Filter and Search Bar */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6 mb-12">
+        {/* Filter and Search Bar: Single Line Category Tabs & Centered Search */}
+        <div className="flex flex-col items-center gap-6 mb-12">
           
-          {/* Category Tabs */}
-          <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 w-full md:w-auto">
+          {/* Category Tabs: Strictly ONE SINGLE HORIZONTAL LINE */}
+          <div className="flex flex-nowrap items-center justify-center gap-2 md:gap-3 overflow-x-auto no-scrollbar w-full py-1">
             {categories.map((cat) => (
               <button
                 key={cat}
                 onClick={() => setSelectedCategory(cat)}
-                className={`px-5 py-2 rounded-full text-xs font-bold uppercase tracking-widest transition-all duration-300 ${
+                className={`px-4 md:px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider whitespace-nowrap transition-all duration-300 shrink-0 ${
                   selectedCategory === cat
                     ? 'bg-white text-black shadow-lg scale-105'
                     : 'bg-white/5 border border-white/10 text-gray-400 hover:text-white hover:bg-white/10 backdrop-blur-md'
@@ -348,14 +368,14 @@ export default function InstagramShowcase() {
           </div>
 
           {/* Search Box */}
-          <div className="relative w-full md:w-72">
+          <div className="relative w-full max-w-md">
             <Search className="w-4 h-4 text-gray-400 absolute left-4 top-1/2 -translate-y-1/2" />
             <input
               type="text"
               placeholder="SEARCH HANDLE OR BRAND..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-11 pr-4 py-2.5 rounded-full bg-white/5 border border-white/10 text-xs font-semibold text-white placeholder-gray-500 focus:outline-none focus:border-nexus-accent/50 backdrop-blur-md uppercase tracking-wider"
+              className="w-full pl-11 pr-4 py-2.5 rounded-full bg-white/5 border border-white/10 text-xs font-semibold text-white placeholder-gray-500 focus:outline-none focus:border-nexus-accent/50 backdrop-blur-md uppercase tracking-wider text-center md:text-left"
             />
           </div>
         </div>
