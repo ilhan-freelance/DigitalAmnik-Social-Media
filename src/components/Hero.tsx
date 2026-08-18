@@ -1,6 +1,6 @@
-import { motion } from 'motion/react';
+import { motion, useScroll, useTransform } from 'motion/react';
 import { ArrowRight, Globe, Zap, BarChart, Users, TrendingUp } from 'lucide-react';
-import Orb from './Orb';
+import { useRef } from 'react';
 
 export default function Hero() {
   const containerVariants = {
@@ -79,21 +79,10 @@ export default function Hero() {
         </motion.div>
 
         <div className="flex flex-col items-center mb-8">
-          <motion.div variants={itemVariants} className="relative w-full max-w-6xl mx-auto mb-6 px-2 flex items-center justify-center min-h-[340px] md:min-h-[500px] lg:min-h-[600px]">
-            {/* React Bits Interactive WebGL Orb Effect Encompassing the Whole Header Text */}
-            <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 w-full max-w-6xl h-[420px] md:h-[620px] lg:h-[750px] mx-auto z-0 pointer-events-auto opacity-95 flex items-center justify-center">
-              <Orb
-                hoverIntensity={0.6}
-                rotateOnHover={true}
-                hue={0}
-                forceHoverState={false}
-                backgroundColor="#000000"
-              />
-            </div>
-
+          <motion.div variants={itemVariants} className="w-full max-w-5xl mx-auto mb-6 px-4">
             <svg 
               viewBox="0 0 1200 290" 
-              className="relative z-10 w-full h-auto select-none drop-shadow-[0_0_35px_rgba(192,132,252,0.45)] overflow-visible pointer-events-none"
+              className="w-full h-auto select-none drop-shadow-[0_0_35px_rgba(192,132,252,0.45)] overflow-visible"
             >
               <defs>
                 <linearGradient id="heroArcGradient" x1="0%" y1="0%" x2="100%" y2="0%">
