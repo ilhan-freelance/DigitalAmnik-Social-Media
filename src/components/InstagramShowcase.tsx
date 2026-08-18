@@ -90,6 +90,36 @@ const instagramAccounts: InstagramAccount[] = [
     description: 'Bespoke designer ethnic wear, bridal couture sarees & luxury fashion studio.'
   },
   {
+    id: 'akshatelectronicsbaran',
+    name: 'Akshat Electronics Baran',
+    handle: '@akshat_electronics_baran',
+    category: 'Education & Tech',
+    instagramUrl: 'https://www.instagram.com/akshat_electronics_baran/',
+    avatarUrl: 'https://images.unsplash.com/photo-1550009158-9ebf69173e03?auto=format&fit=crop&w=400&q=80',
+    isVerified: true,
+    description: 'Consumer electronics, smart home appliances & digital tech retail store in Baran.'
+  },
+  {
+    id: 'toofitofficial',
+    name: 'TooFit Official',
+    handle: '@toofit.official',
+    category: 'Hospitality & Lifestyle',
+    instagramUrl: 'https://www.instagram.com/toofit.official/',
+    avatarUrl: 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=400&q=80',
+    isVerified: true,
+    description: 'Premium fitness training, gym lifestyle, activewear & physical wellness.'
+  },
+  {
+    id: 'itesolar',
+    name: 'ITE Solar',
+    handle: '@ite_solar',
+    category: 'Education & Tech',
+    instagramUrl: 'https://www.instagram.com/ite_solar?igsh=MXQxc2poZG5kZ2s0bw==',
+    avatarUrl: 'https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=400&q=80',
+    isVerified: true,
+    description: 'Clean solar energy solutions, rooftop solar installations & renewable green technology.'
+  },
+  {
     id: 'aventara-jewels',
     name: 'Aventara Jewels',
     handle: '@aventara_jewels',
