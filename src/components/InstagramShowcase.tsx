@@ -190,24 +190,14 @@ const instagramAccounts: InstagramAccount[] = [
     description: 'Digital brand creator, lifestyle campaigns & media presence.'
   },
   {
-    id: 'shaazmediaentertainment',
-    name: 'Shaaz Media Entertainment',
-    handle: '@shaazmediaentertainment',
-    category: 'Hospitality & Lifestyle',
-    instagramUrl: 'https://www.instagram.com/shaazmediaentertainment?igsh=MWpqdWRpdjdpY250bA==',
-    avatarUrl: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=400&q=80',
-    isVerified: true,
-    description: 'Media production, entertainment events & talent management.'
-  },
-  {
-    id: 'siplshaazintpremierleague',
-    name: 'Shaaz International Premier League',
-    handle: '@sipl_shaazintpremierleague',
-    category: 'Hospitality & Lifestyle',
-    instagramUrl: 'https://www.instagram.com/sipl_shaazintpremierleague?igsh=OGdnbHQ3a3ptNDU5',
-    avatarUrl: 'https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=400&q=80',
-    isVerified: true,
-    description: 'Premier sports league, cricket tournaments & athletic events.'
+    id: 'goodhealthcare',
+    name: 'Good Health Care',
+    handle: '@goodhealthcare__',
+    category: 'Healthcare',
+    instagramUrl: 'https://www.instagram.com/goodhealthcare__?igsh=eGl6a29vYjc1MnRx',
+    avatarUrl: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=400&q=80',
+    isVerified: false,
+    description: 'Comprehensive healthcare advice, diagnostics & wellness.'
   },
   {
     id: 'pasandladiessuits',
@@ -258,6 +248,26 @@ const instagramAccounts: InstagramAccount[] = [
     avatarUrl: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=400&q=80',
     isVerified: true,
     description: 'Modern cafe, rooftop lounge & gourmet food experience.'
+  },
+  {
+    id: 'shaazmediaentertainment',
+    name: 'Shaaz Media Entertainment',
+    handle: '@shaazmediaentertainment',
+    category: 'Hospitality & Lifestyle',
+    instagramUrl: 'https://www.instagram.com/shaazmediaentertainment?igsh=MWpqdWRpdjdpY250bA==',
+    avatarUrl: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=400&q=80',
+    isVerified: true,
+    description: 'Media production, entertainment events & talent management.'
+  },
+  {
+    id: 'siplshaazintpremierleague',
+    name: 'Shaaz International Premier League',
+    handle: '@sipl_shaazintpremierleague',
+    category: 'Hospitality & Lifestyle',
+    instagramUrl: 'https://www.instagram.com/sipl_shaazintpremierleague?igsh=OGdnbHQ3a3ptNDU5',
+    avatarUrl: 'https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=400&q=80',
+    isVerified: true,
+    description: 'Premier sports league, cricket tournaments & athletic events.'
   }
 ];
 
