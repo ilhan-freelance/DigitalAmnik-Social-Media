@@ -434,13 +434,9 @@ export default function InstagramShowcase() {
                         )}
                       </div>
 
-                      <div className="text-xs font-bold uppercase tracking-widest text-nexus-cyan/80 mb-2">
+                      <div className="text-xs font-bold uppercase tracking-widest text-nexus-cyan/80">
                         {account.handle}
                       </div>
-
-                      <span className="inline-block px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[10px] font-bold uppercase tracking-widest text-gray-300">
-                        {account.category}
-                      </span>
                     </div>
                   </div>
 
