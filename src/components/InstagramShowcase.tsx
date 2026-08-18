@@ -20,6 +20,76 @@ interface InstagramAccount {
 
 const instagramAccounts: InstagramAccount[] = [
   {
+    id: 'vivorajasthan',
+    name: 'Vivo Rajasthan',
+    handle: '@vivo_rajasthan',
+    category: 'Education & Tech',
+    instagramUrl: 'https://www.instagram.com/vivo_rajasthan/?hl=en',
+    avatarUrl: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=400&q=80',
+    isVerified: true,
+    description: 'Official Vivo smartphones showcase, mobile tech innovations & retail experience across Rajasthan.'
+  },
+  {
+    id: 'tigerdenresort_ranthambor',
+    name: 'Tiger Den Resort',
+    handle: '@tigerdenresort_ranthambor',
+    category: 'Hospitality & Lifestyle',
+    instagramUrl: 'https://www.instagram.com/tigerdenresort_ranthambor?igsh=MTl6dW93YzM5YWF5cA==',
+    avatarUrl: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=400&q=80',
+    isVerified: true,
+    description: 'Luxury wildlife safari resort, jungle lodge & wilderness hospitality in Ranthambore.'
+  },
+  {
+    id: 'whiteheavencamps',
+    name: 'White Heaven Camps',
+    handle: '@whiteheavencamps',
+    category: 'Hospitality & Lifestyle',
+    instagramUrl: 'https://www.instagram.com/whiteheavencamps?igsh=NmFiNXE3bHU2eGJq',
+    avatarUrl: 'https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=400&q=80',
+    isVerified: true,
+    description: 'Luxury desert camping, Swiss tent stays & royal Rajasthani glamping experiences.'
+  },
+  {
+    id: 'desertadventurecamp',
+    name: 'Desert Adventure Camp',
+    handle: '@desertadventurecamp',
+    category: 'Hospitality & Lifestyle',
+    instagramUrl: 'https://www.instagram.com/desertadventurecamp?igsh=OWt0aGxjZW95dW42',
+    avatarUrl: 'https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=400&q=80',
+    isVerified: true,
+    description: 'Authentic desert safari, dune bashing & traditional Rajasthani luxury camp stay.'
+  },
+  {
+    id: 'kotahearingcare',
+    name: 'Kota Hearing Care',
+    handle: '@kotahearingcare',
+    category: 'Healthcare',
+    instagramUrl: 'https://www.instagram.com/kotahearingcare?igsh=dmx6a2JvY3Nvdzhl',
+    avatarUrl: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=400&q=80',
+    isVerified: true,
+    description: 'Specialized audiometry, digital hearing aids & comprehensive hearing healthcare clinic.'
+  },
+  {
+    id: 'tharmotorsport',
+    name: 'Thar Motorsport',
+    handle: '@tharmotorsport',
+    category: 'Hospitality & Lifestyle',
+    instagramUrl: 'https://www.instagram.com/tharmotorsport?igsh=MWVqeDUzejNmNXRieQ==',
+    avatarUrl: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=400&q=80',
+    isVerified: true,
+    description: 'Premier off-road motorsport rallies, desert drives & extreme automotive adventure events.'
+  },
+  {
+    id: 'krishnambysumitgoel',
+    name: 'Krishnam by Sumit Goel',
+    handle: '@krishnambysumitgoel',
+    category: 'Retail & Fashion',
+    instagramUrl: 'https://www.instagram.com/krishnambysumitgoel?igsh=aG5qeTV3d2UxbDdo',
+    avatarUrl: 'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=400&q=80',
+    isVerified: true,
+    description: 'Bespoke designer ethnic wear, bridal couture sarees & luxury fashion studio.'
+  },
+  {
     id: 'aventara-jewels',
     name: 'Aventara Jewels',
     handle: '@aventara_jewels',
@@ -103,7 +173,7 @@ const instagramAccounts: InstagramAccount[] = [
     id: 'plywoodwale',
     name: 'Plywoodwale',
     handle: '@plywoodwale_com',
-    category: 'Education & Tech',
+    category: 'Retail & Fashion',
     instagramUrl: 'https://www.instagram.com/plywoodwale_com?igsh=NXkxa21vZG1hcms3',
     avatarUrl: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=400&q=80',
     isVerified: false,
