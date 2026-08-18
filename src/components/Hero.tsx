@@ -79,9 +79,9 @@ export default function Hero() {
         </motion.div>
 
         <div className="flex flex-col items-center mb-8">
-          <motion.div variants={itemVariants} className="relative w-full max-w-5xl mx-auto mb-6 px-4 flex items-center justify-center min-h-[280px] md:min-h-[420px]">
-            {/* React Bits Interactive WebGL Orb Effect Behind Header Text */}
-            <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 w-full max-w-3xl h-[320px] md:h-[460px] mx-auto z-0 pointer-events-auto opacity-95">
+          <motion.div variants={itemVariants} className="relative w-full max-w-6xl mx-auto mb-6 px-2 flex items-center justify-center min-h-[340px] md:min-h-[500px] lg:min-h-[600px]">
+            {/* React Bits Interactive WebGL Orb Effect Encompassing the Whole Header Text */}
+            <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 w-full max-w-6xl h-[420px] md:h-[620px] lg:h-[750px] mx-auto z-0 pointer-events-auto opacity-95 flex items-center justify-center">
               <Orb
                 hoverIntensity={0.6}
                 rotateOnHover={true}
