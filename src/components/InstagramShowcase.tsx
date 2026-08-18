@@ -360,13 +360,13 @@ export default function InstagramShowcase() {
         {/* Filter and Search Bar: Single Line Category Tabs & Centered Search */}
         <div className="flex flex-col items-center gap-6 mb-12">
           
-          {/* Category Tabs: Strictly ONE SINGLE HORIZONTAL LINE */}
-          <div className="flex flex-nowrap items-center justify-start md:justify-center gap-2 md:gap-3 overflow-x-auto no-scrollbar w-full py-2 px-1">
+          {/* Category Tabs: Clean wrap on mobile, single line on desktop */}
+          <div className="flex flex-wrap md:flex-nowrap items-center justify-center gap-2 md:gap-3 w-full py-2 px-2 max-w-5xl mx-auto">
             {categories.map((cat) => (
               <button
                 key={cat}
                 onClick={() => setSelectedCategory(cat)}
-                className={`px-4 md:px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider whitespace-nowrap transition-all duration-300 shrink-0 ${
+                className={`px-3.5 md:px-5 py-2 md:py-2.5 rounded-full text-[11px] md:text-xs font-bold uppercase tracking-wider whitespace-nowrap transition-all duration-300 ${
                   selectedCategory === cat
                     ? 'bg-white text-black shadow-lg scale-105'
                     : 'bg-white/5 border border-white/10 text-gray-400 hover:text-white hover:bg-white/10 backdrop-blur-md'
