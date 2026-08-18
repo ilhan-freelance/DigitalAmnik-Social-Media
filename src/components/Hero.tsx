@@ -79,9 +79,9 @@ export default function Hero() {
         </motion.div>
 
         <div className="flex flex-col items-center mb-8">
-          <motion.div variants={itemVariants} className="relative w-full max-w-6xl mx-auto mb-4 md:mb-6 px-2 flex items-center justify-center min-h-[220px] sm:min-h-[300px] md:min-h-[480px] lg:min-h-[580px]">
+          <motion.div variants={itemVariants} className="relative w-full max-w-6xl mx-auto mb-6 px-2 flex items-center justify-center min-h-[340px] md:min-h-[500px] lg:min-h-[600px]">
             {/* React Bits Interactive WebGL Orb Effect Encompassing the Whole Header Text */}
-            <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 w-full max-w-6xl h-[260px] sm:h-[380px] md:h-[580px] lg:h-[720px] mx-auto z-0 pointer-events-auto opacity-90 flex items-center justify-center">
+            <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 w-full max-w-6xl h-[420px] md:h-[620px] lg:h-[750px] mx-auto z-0 pointer-events-auto opacity-95 flex items-center justify-center">
               <Orb
                 hoverIntensity={0.6}
                 rotateOnHover={true}
@@ -93,54 +93,43 @@ export default function Hero() {
 
             <svg 
               viewBox="0 0 1200 290" 
-              className="relative z-10 w-full h-auto select-none drop-shadow-[0_0_25px_rgba(255,255,255,0.7)] overflow-visible pointer-events-none"
+              className="relative z-10 w-full h-auto select-none drop-shadow-[0_0_35px_rgba(192,132,252,0.45)] overflow-visible pointer-events-none"
             >
               <defs>
                 <linearGradient id="heroArcGradient" x1="0%" y1="0%" x2="100%" y2="0%">
                   <stop offset="0%" stopColor="#ffffff" />
-                  <stop offset="25%" stopColor="#e0e7ff" />
-                  <stop offset="50%" stopColor="#ffffff" />
-                  <stop offset="75%" stopColor="#c084fc" />
+                  <stop offset="25%" stopColor="#c084fc" />
+                  <stop offset="50%" stopColor="#f0abfc" />
+                  <stop offset="75%" stopColor="#a78bfa" />
                   <stop offset="100%" stopColor="#ffffff" />
                 </linearGradient>
                 
-                <filter id="textGlow" x="-20%" y="-20%" width="140%" height="140%">
-                  <feGaussianBlur stdDeviation="4" result="blur" />
-                  <feMerge>
-                    <feMergeNode in="blur" />
-                    <feMergeNode in="SourceGraphic" />
-                  </feMerge>
-                </filter>
-
                 {/* Line 1 Curved Arc: WE ARE A 360° */}
                 <path
                   id="heroArcLine1"
-                  d="M 120 100 Q 600 25 1080 100"
+                  d="M 160 105 Q 600 35 1040 105"
                   fill="none"
                 />
                 {/* Line 2 Curved Arc: DIGITAL MARKETING AGENCY */}
                 <path
                   id="heroArcLine2"
-                  d="M 40 225 Q 600 130 1160 225"
+                  d="M 70 230 Q 600 135 1130 230"
                   fill="none"
                 />
               </defs>
               
               {/* Line 1: WE ARE A 360° */}
               <text 
-                fontSize="76" 
+                fontSize="62" 
                 fontWeight="900" 
-                letterSpacing="4"
+                letterSpacing="3"
                 className="uppercase font-display"
-                filter="url(#textGlow)"
               >
                 <textPath 
                   href="#heroArcLine1" 
                   startOffset="50%" 
                   textAnchor="middle" 
                   fill="url(#heroArcGradient)"
-                  stroke="#ffffff"
-                  strokeWidth="1.2"
                 >
                   WE ARE A 360°
                 </textPath>
@@ -148,19 +137,16 @@ export default function Hero() {
 
               {/* Line 2: DIGITAL MARKETING AGENCY */}
               <text 
-                fontSize="68" 
+                fontSize="56" 
                 fontWeight="900" 
-                letterSpacing="3"
+                letterSpacing="2"
                 className="uppercase font-display"
-                filter="url(#textGlow)"
               >
                 <textPath 
                   href="#heroArcLine2" 
                   startOffset="50%" 
                   textAnchor="middle" 
                   fill="url(#heroArcGradient)"
-                  stroke="#ffffff"
-                  strokeWidth="1.2"
                 >
                   DIGITAL MARKETING AGENCY
                 </textPath>
