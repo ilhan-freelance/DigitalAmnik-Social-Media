@@ -1,36 +1,5 @@
 import { motion } from 'motion/react';
 import { ArrowRight, Globe, Zap, BarChart, Users, TrendingUp } from 'lucide-react';
-import { Component, ReactNode } from 'react';
-import Orb from './Orb';
-
-interface ErrorBoundaryProps {
-  children: ReactNode;
-}
-interface ErrorBoundaryState {
-  hasError: boolean;
-}
-
-class OrbErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
-  constructor(props: ErrorBoundaryProps) {
-    super(props);
-    this.state = { hasError: false };
-  }
-
-  static getDerivedStateFromError() {
-    return { hasError: true };
-  }
-
-  componentDidCatch(error: unknown) {
-    console.warn("Orb WebGL error caught:", error);
-  }
-
-  render() {
-    if (this.state.hasError) {
-      return null;
-    }
-    return this.props.children;
-  }
-}
 
 export default function Hero() {
   const containerVariants = {
@@ -109,26 +78,10 @@ export default function Hero() {
         </motion.div>
 
         <div className="flex flex-col items-center mb-8">
-          <motion.div 
-            variants={itemVariants} 
-            className="relative w-full max-w-[340px] sm:max-w-[440px] md:max-w-[580px] lg:max-w-[640px] aspect-square mx-auto mb-6 px-2 flex items-center justify-center"
-          >
-            {/* React Bits Interactive WebGL Orb Effect Framing Text on PC & Mobile */}
-            <div className="absolute inset-0 w-full h-full z-0 pointer-events-auto opacity-95 flex items-center justify-center">
-              <OrbErrorBoundary>
-                <Orb
-                  hoverIntensity={0.6}
-                  rotateOnHover={true}
-                  hue={0}
-                  forceHoverState={false}
-                  backgroundColor="#000000"
-                />
-              </OrbErrorBoundary>
-            </div>
-
+          <motion.div variants={itemVariants} className="w-full max-w-5xl mx-auto mb-6 px-4">
             <svg 
-              viewBox="0 0 1200 320" 
-              className="relative z-10 w-[88%] h-auto select-none drop-shadow-[0_0_35px_rgba(192,132,252,0.5)] overflow-visible pointer-events-none"
+              viewBox="0 0 1200 290" 
+              className="w-full h-auto select-none drop-shadow-[0_0_35px_rgba(192,132,252,0.45)] overflow-visible"
             >
               <defs>
                 <linearGradient id="heroArcGradient" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -142,20 +95,20 @@ export default function Hero() {
                 {/* Line 1 Curved Arc: WE ARE A 360° */}
                 <path
                   id="heroArcLine1"
-                  d="M 160 115 Q 600 45 1040 115"
+                  d="M 160 105 Q 600 35 1040 105"
                   fill="none"
                 />
                 {/* Line 2 Curved Arc: DIGITAL MARKETING AGENCY */}
                 <path
                   id="heroArcLine2"
-                  d="M 70 240 Q 600 145 1130 240"
+                  d="M 70 230 Q 600 135 1130 230"
                   fill="none"
                 />
               </defs>
               
               {/* Line 1: WE ARE A 360° */}
               <text 
-                fontSize="64" 
+                fontSize="62" 
                 fontWeight="900" 
                 letterSpacing="3"
                 className="uppercase font-display"
@@ -172,7 +125,7 @@ export default function Hero() {
 
               {/* Line 2: DIGITAL MARKETING AGENCY */}
               <text 
-                fontSize="58" 
+                fontSize="56" 
                 fontWeight="900" 
                 letterSpacing="2"
                 className="uppercase font-display"
